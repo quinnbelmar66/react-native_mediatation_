@@ -1,9 +1,3 @@
-<<<<<<< Updated upstream
-node_modules/
-.expo/
-dist/
-npm-debug.*
-=======
 # Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
 
 # dependencies
@@ -16,19 +10,11 @@ web-build/
 
 # Native
 *.orig.*
->>>>>>> Stashed changes
 *.jks
 *.p8
 *.p12
 *.key
 *.mobileprovision
-<<<<<<< Updated upstream
-*.orig.*
-web-build/
-
-# macOS
-.DS_Store
-=======
 
 # Metro
 .metro-health-check*
@@ -53,4 +39,3 @@ yarn-error.*
 
 expo-env.d.ts
 # @end expo-cli
->>>>>>> Stashed changes
