@@ -1,3 +1,5 @@
+//  Creates the bottom tabs
+
 import React from 'react';
 import FontAwesome from '@expo/vector-icons/FontAwesome';
 import { Link, Tabs } from 'expo-router';
@@ -52,10 +54,10 @@ export default function TabLayout() {
         }}
       />
       <Tabs.Screen
-        name="two"
+        name="resources"
         options={{
-          title: 'Tab Two',
-          tabBarIcon: ({ color }) => <TabBarIcon name="code" color={color} />,
+          title: 'Resources',
+          tabBarIcon: ({ color }) => <AntDesign name="folder1" color={color} />,
         }}
 
         

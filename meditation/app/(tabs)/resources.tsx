@@ -1,14 +1,16 @@
 import { StyleSheet } from 'react-native';
 
-import EditScreenInfo from '@/components/EditScreenInfo';
 import { Text, View } from '@/components/Themed';
+import ResoursesScreen from '@/components/ResourcesScreen';
+import React from 'react';
 
-export default function TabTwoScreen() {
+// Makes the screen for tabtwo
+export default function Resources() {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Tab Two</Text>
+      <Text style={styles.title}>Meditation resources</Text>
       <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
-      <EditScreenInfo path="app/(tabs)/two.tsx" />
+      <ResoursesScreen path="app/(tabs)/resources.tsx" />
     </View>
   );
 }

@@ -1,3 +1,5 @@
+// Displays the home screen
+
 import FontAwesome from '@expo/vector-icons/FontAwesome';
 import { DarkTheme, DefaultTheme, ThemeProvider } from '@react-navigation/native';
 import { useFonts } from 'expo-font';
@@ -6,6 +8,7 @@ import * as SplashScreen from 'expo-splash-screen';
 import { useEffect } from 'react';
 
 import { useColorScheme } from '@/components/useColorScheme';
+import React from 'react';
 
 export {
   // Catch any errors thrown by the Layout component.
@@ -44,6 +47,7 @@ export default function RootLayout() {
   return <RootLayoutNav />;
 }
 
+// This is where the screen is setup 
 function RootLayoutNav() {
   const colorScheme = useColorScheme();
 
