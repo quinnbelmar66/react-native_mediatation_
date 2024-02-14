@@ -7,6 +7,10 @@ import Colors from '@/constants/Colors';
 import { useColorScheme } from '@/components/useColorScheme';
 import { useClientOnlyValue } from '@/components/useClientOnlyValue';
 
+// Importing icon family
+import { AntDesign } from '@expo/vector-icons';
+
+
 // You can explore the built-in icon families and icons on the web at https://icons.expo.fyi/
 function TabBarIcon(props: {
   name: React.ComponentProps<typeof FontAwesome>['name'];
@@ -30,7 +34,7 @@ export default function TabLayout() {
         name="index"
         options={{
           title: 'Tab One',
-          tabBarIcon: ({ color }) => <TabBarIcon name="code" color={color} />,
+          tabBarIcon: ({ color }) => <AntDesign name="leftcircle" color={color} />,
           headerRight: () => (
             <Link href="/modal" asChild>
               <Pressable>
@@ -53,7 +57,17 @@ export default function TabLayout() {
           title: 'Tab Two',
           tabBarIcon: ({ color }) => <TabBarIcon name="code" color={color} />,
         }}
+
+        
       />
+
+  {/* Added a third tab*/}
+  <Tabs.Screen
+          name="three"
+          options={{
+            title: 'Tab Three',
+            tabBarIcon: ({ color }) => <TabBarIcon name="code" color={color} />,
+          }} />
     </Tabs>
   );
 }
