@@ -8,7 +8,6 @@ import ResourceDisplay from '@/components/ResourceDisplay';
 import { ExternalLink } from '@/components/ExternalLink';
 import React from 'react';
 import Colors from '@/constants/Colors';
-import ResourcesDisplay from '@/components/ResourceDisplay';
 
 export default function Breathing_TechniquesScreen() {
   return (
