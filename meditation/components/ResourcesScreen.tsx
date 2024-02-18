@@ -18,6 +18,8 @@ import Colors from '@/constants/Colors';
 
 import { useColorScheme } from '@/components/useColorScheme';
 import { AntDesign } from '@expo/vector-icons';
+import { SafeAreaView } from 'react-native-safe-area-context';
+import Box from "./Box";
 
 
 
@@ -26,52 +28,48 @@ export default function ResoursesScreen({ path }: { path: string }) {
 
   return (
     <View>
-      <View style={styles.getStartedContainer}>
-        <Text
-          style={styles.getStartedText}
-          lightColor="rgba(0,0,0,0.8)"
-          darkColor="rgba(255,255,255,0.8)">
-          Breathing techniques:
-        </Text>
+           <View style={styles.getStartedContainer}>
+              <Text style={styles.title}>Meditation resources</Text>
+           </View>
 
-          <Link href="/resource_categories/breathing_techniques" asChild>
-              <Pressable>
-                {({ pressed }) => (
-                  <AntDesign
-                    name="file1"
-                    size={25}
-                    color={Colors[colorScheme ?? 'light'].text}
-                    style={{ marginRight: 15, opacity: pressed ? 0.5 : 1 }}
-                  />
-                )}
-              </Pressable>
-          </Link>
 
-          
-
-        <View
-          style={[styles.codeHighlightContainer, styles.homeScreenFilename]}
-          darkColor="rgba(255,255,255,0.05)"
-          lightColor="rgba(0,0,0,0.05)">
-          <MonoText>Path to the file calling this function: {path}</MonoText>
-        </View>
-
-        <Text
-          style={styles.getStartedText}
-          lightColor="rgba(0,0,0,0.8)"
-          darkColor="rgba(255,255,255,0.8)">
-          
-        </Text>
-      </View>
-
+          <View style={styles.container}>
+            <Link href="/resource_categories/breathing_techniques" asChild>
+                <Pressable>
+                    <Box style={{ backgroundColor: "#8e9b00", flex: 2,}}>Breathing</Box>
+                </Pressable>
+            </Link>
+          </View>
     </View>
+
+
+          
+
   );
 }
 
 const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    marginTop: 30,
+    justifyContent: "flex-end",
+    backgroundColor: 'black',
+  },
+  separator: {
+    marginVertical: 30,
+    height: 1,
+    width: '80%',
+  },
+  title: {
+    fontSize: 20,
+    fontWeight: 'bold',
+    marginTop: 30,
+  },
+
   getStartedContainer: {
     alignItems: 'center',
     marginHorizontal: 50,
+    paddingBottom: 20,
   },
   homeScreenFilename: {
     marginVertical: 7,
@@ -86,9 +84,9 @@ const styles = StyleSheet.create({
     textAlign: 'center',
   },
   helpContainer: {
+    alignItems: 'center',
     marginTop: 15,
     marginHorizontal: 20,
-    alignItems: 'center',
   },
   helpLink: {
     paddingVertical: 15,

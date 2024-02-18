@@ -14,5 +14,5 @@
     "**/*.tsx",
     ".expo/types/**/*.ts",
     "expo-env.d.ts"
-  ]
+, "app/homepage.tsx", "components/Box.js", "components/ResourcesScreen.tsx"  ]
 }
