@@ -42,10 +42,12 @@ export default function ResoursesScreen({ path }: { path: string }) {
                     size={25}
                     color={Colors[colorScheme ?? 'light'].text}
                     style={{ marginRight: 15, opacity: pressed ? 0.5 : 1 }}
-                  /> 
+                  />
                 )}
               </Pressable>
           </Link>
+
+          
 
         <View
           style={[styles.codeHighlightContainer, styles.homeScreenFilename]}

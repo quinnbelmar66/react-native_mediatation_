@@ -53,6 +53,8 @@ export default function TabLayout() {
           ),
         }}
       />
+
+      {/* Puts the resources screen onto the layout*/}
       <Tabs.Screen
         name="resources"
         options={{
