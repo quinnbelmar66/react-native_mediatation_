@@ -8,7 +8,7 @@ import React from 'react';
 export default function HomePage() {
   return (
     <SafeAreaView>
-      <ResoursesScreen path="homepage.tsx" />
+      <ResoursesScreen path="resources.tsx" />
     </SafeAreaView>
   );
 }

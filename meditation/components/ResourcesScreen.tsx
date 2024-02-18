@@ -28,18 +28,50 @@ export default function ResoursesScreen({ path }: { path: string }) {
 
   return (
     <View>
-           <View style={styles.getStartedContainer}>
+           <View style={styles.helpContainer}>
               <Text style={styles.title}>Meditation resources</Text>
            </View>
 
-
-          <View style={styles.container}>
-            <Link href="/resource_categories/breathing_techniques" asChild>
-                <Pressable>
-                    <Box style={{ backgroundColor: "#8e9b00", flex: 2,}}>Breathing</Box>
+          {/*Links to each resource*/}
+          <Link href="/resource_categories/breathing_techniques" asChild>
+              <Pressable>
+                
+                <View>
+                    <Box style={{ backgroundColor: "#1C0077"}}>Breathing</Box>
+                </View>
                 </Pressable>
-            </Link>
-          </View>
+           </Link>
+
+           <Link href="/resource_categories/breathing_techniques" asChild>
+              <Pressable>
+                
+                <View>
+                    <Box style={{ backgroundColor: "#240099"}}>Breathing</Box>
+                </View>
+                </Pressable>
+           </Link>
+
+           <Link href="/resource_categories/breathing_techniques" asChild>
+              <Pressable>
+                
+                <View>
+                    <Box style={{ backgroundColor: "#3D0077"}}>Breathing</Box>
+                </View>
+                </Pressable>
+           </Link>
+
+           
+           <Link href="/resource_categories/breathing_techniques" asChild>
+              <Pressable>
+                
+                <View>
+                    <Box style={{ backgroundColor: "#6100BB"}}>Breathing</Box>
+                </View>
+                </Pressable>
+           </Link>
+
+
+
     </View>
 
 
@@ -51,14 +83,10 @@ export default function ResoursesScreen({ path }: { path: string }) {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    marginTop: 30,
-    justifyContent: "flex-end",
+    marginTop: 64,
+    borderWidth: 6,
+    borderColor: 'red',
     backgroundColor: 'black',
-  },
-  separator: {
-    marginVertical: 30,
-    height: 1,
-    width: '80%',
   },
   title: {
     fontSize: 20,
@@ -86,7 +114,7 @@ const styles = StyleSheet.create({
   helpContainer: {
     alignItems: 'center',
     marginTop: 15,
-    marginHorizontal: 20,
+    padding: 20,
   },
   helpLink: {
     paddingVertical: 15,

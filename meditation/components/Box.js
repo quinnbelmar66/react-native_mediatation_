@@ -16,7 +16,7 @@ export default function Box({ children, style }) {
 const styles = StyleSheet.create({
     box: {
         backgroundColor: "#fff",
-        padding: 50,
+        padding: 25,
         justifyContent: "center",
         alignItems: "center",
     },
@@ -24,7 +24,6 @@ const styles = StyleSheet.create({
         fontSize: 24,
         fontWeight: "bold", 
         textAlign: "center",
-        color: "black",
-        padding: 45,
+        color: "white",
     },
 });
