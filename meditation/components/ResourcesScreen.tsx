@@ -42,30 +42,30 @@ export default function ResoursesScreen({ path }: { path: string }) {
                 </Pressable>
            </Link>
 
-           <Link href="/resource_categories/breathing_techniques" asChild>
+           <Link href="/resource_categories/mindfulness" asChild>
               <Pressable>
                 
                 <View>
-                    <Box style={{ backgroundColor: "#240099"}}>Breathing</Box>
+                    <Box style={{ backgroundColor: "#240099"}}>Mindfulness</Box>
                 </View>
                 </Pressable>
            </Link>
 
-           <Link href="/resource_categories/breathing_techniques" asChild>
+           <Link href="/resource_categories/yoga" asChild>
               <Pressable>
                 
                 <View>
-                    <Box style={{ backgroundColor: "#3D0077"}}>Breathing</Box>
+                    <Box style={{ backgroundColor: "#3D0077"}}>Yoga</Box>
                 </View>
                 </Pressable>
            </Link>
 
            
-           <Link href="/resource_categories/breathing_techniques" asChild>
+           <Link href="/resource_categories/books" asChild>
               <Pressable>
                 
                 <View>
-                    <Box style={{ backgroundColor: "#6100BB"}}>Breathing</Box>
+                    <Box style={{ backgroundColor: "#6100BB"}}>Books</Box>
                 </View>
                 </Pressable>
            </Link>
