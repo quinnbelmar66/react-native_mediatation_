@@ -21,7 +21,7 @@ export default function Breathing_TechniquesScreen() {
           style={styles.helpLink}
           href="https://www.youtube.com/watch?v=tHkZrASHdKc&list=PL59B7176903ABDBA7">
           <Text style={styles.helpLinkText} lightColor={Colors.light.tint}>
-            Tap here for the Kurt Johnsen's First Youtube Session
+            Tap here for the Kurt Johnsen's First Youtube Session.
           </Text>
         </ExternalLink>
       </View>
