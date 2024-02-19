@@ -26,6 +26,38 @@ export default function Breathing_TechniquesScreen() {
         </ExternalLink>
       </View>
 
+      <View style={styles.helpContainer}>
+        <ExternalLink
+          style={styles.helpLink}
+          href="https://event.us.artofliving.org/us-en/sahajsamadhi/?utm_source=organic&utm_medium=home&utm_content=allcourses&course_id=999649">
+          <Text style={styles.helpLinkText} lightColor={Colors.light.tint}>
+            Tap here for the Simple mantra-based natural (Sahaj) meditation
+          </Text>
+        </ExternalLink>
+      </View>
+
+
+      <View style={styles.helpContainer}>
+        <ExternalLink
+          style={styles.helpLink}
+          href="https://event.us.artofliving.org/us-en/sahajsamadhi/?utm_source=organic&utm_medium=home&utm_content=allcourses&course_id=999649">
+          <Text style={styles.helpLinkText} lightColor={Colors.light.tint}>
+            Tap here for Healthcare Providers - CME/CE Program
+          </Text>
+        </ExternalLink>
+      </View>
+
+
+      <View style={styles.helpContainer}>
+        <ExternalLink
+          style={styles.helpLink}
+          href="https://healthygutweb.wordpress.com/2016/07/19/blog-post-title-3/">
+          <Text style={styles.helpLinkText} lightColor={Colors.light.tint}>
+            Tap here for a General Breathing Technique Resource
+          </Text>
+        </ExternalLink>
+      </View>
+
 
       {/* Use a light status bar on iOS to account for the black space above the modal */}
       <StatusBar style={Platform.OS === 'ios' ? 'light' : 'auto'} />

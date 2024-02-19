@@ -1,4 +1,4 @@
-// Modal screen setup
+// Modal screen setu
 
 import { StatusBar } from 'expo-status-bar';
 import { Platform, StyleSheet } from 'react-native';
@@ -19,9 +19,39 @@ export default function Breathing_TechniquesScreen() {
       <View style={styles.helpContainer}>
         <ExternalLink
           style={styles.helpLink}
-          href="https://event.us.artofliving.org/us-en/online-course-2/?utm_source=organic&utm_medium=home&utm_content=allcourses&course_id=811569">
+          href="https://www.youtube.com/watch?v=tHkZrASHdKc&list=PL59B7176903ABDBA7">
           <Text style={styles.helpLinkText} lightColor={Colors.light.tint}>
-            Tap here for the SKY Breathing/Happiness Program
+            Tap here for the Kurt Johnsen's First Youtube Session
+          </Text>
+        </ExternalLink>
+      </View>
+
+      <View style={styles.helpContainer}>
+        <ExternalLink
+          style={styles.helpLink}
+          href="https://www.youtube.com/watch?v=nsybEY_uSA8">
+          <Text style={styles.helpLinkText} lightColor={Colors.light.tint}>
+            Tap here for the Kurt Johnsen's Second Yoga for Life Session
+          </Text>
+        </ExternalLink>
+      </View>
+
+      <View style={styles.helpContainer}>
+        <ExternalLink
+          style={styles.helpLink}
+          href="https://www.youtube.com/watch?v=CZGF0CxxHIU&list=PL_es92EEwzU0xAUkejzyimNP75JXSZ--2">
+          <Text style={styles.helpLinkText} lightColor={Colors.light.tint}>
+            Tap here for the Kurt Johnsen's Third Yoga for Life Session
+          </Text>
+        </ExternalLink>
+      </View>
+
+      <View style={styles.helpContainer}>
+        <ExternalLink
+          style={styles.helpLink}
+          href="https://www.youtube.com/watch?v=EwQkfoKxRvo">
+          <Text style={styles.helpLinkText} lightColor={Colors.light.tint}>
+            Tap here for the Simple Isha Meditation
           </Text>
         </ExternalLink>
       </View>
