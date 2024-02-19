@@ -19,12 +19,34 @@ export default function Breathing_TechniquesScreen() {
       <View style={styles.helpContainer}>
         <ExternalLink
           style={styles.helpLink}
-          href="https://event.us.artofliving.org/us-en/online-course-2/?utm_source=organic&utm_medium=home&utm_content=allcourses&course_id=811569">
+          href="https://apps.apple.com/us/app/yoga-nidra-deep-relaxation/id430531216">
           <Text style={styles.helpLinkText} lightColor={Colors.light.tint}>
-            Tap here for the SKY Breathing/Happiness Program
+            Tap here for Yoga Nidra App - LITE version is free.
           </Text>
         </ExternalLink>
       </View>
+
+      <View style={styles.helpContainer}>
+        <ExternalLink
+          style={styles.helpLink}
+          href="https://isha.sadhguru.org/app/">
+          <Text style={styles.helpLinkText} lightColor={Colors.light.tint}>
+            Tap here for Isha App.
+          </Text>
+        </ExternalLink>
+      </View>
+
+
+      <View style={styles.helpContainer}>
+        <ExternalLink
+          style={styles.helpLink}
+          href="https://apps.apple.com/us/app/shivyog-play/id1501801980">
+          <Text style={styles.helpLinkText} lightColor={Colors.light.tint}>
+            Tap here for Shiv Yog Play App.
+          </Text>
+        </ExternalLink>
+      </View>
+
 
 
       {/* Use a light status bar on iOS to account for the black space above the modal */}
