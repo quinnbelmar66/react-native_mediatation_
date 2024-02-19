@@ -47,6 +47,17 @@ export default function Breathing_TechniquesScreen() {
         </ExternalLink>
       </View>
 
+      <View style={styles.helpContainer}>
+        <ExternalLink
+          style={styles.helpLink}
+          href="https://apps.apple.com/us/app/calm/id571800810">
+          <Text style={styles.helpLinkText} lightColor={Colors.light.tint}>
+            Tap here for the Calm, Headspace, Balance App.
+          </Text>
+        </ExternalLink>
+      </View>
+
+
 
 
       {/* Use a light status bar on iOS to account for the black space above the modal */}
