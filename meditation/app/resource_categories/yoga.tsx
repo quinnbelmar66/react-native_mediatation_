@@ -14,7 +14,7 @@ export default function Breathing_TechniquesScreen() {
     <View style={styles.container}>
       <Text style={styles.title}>Yoga</Text>
       <View style={styles.separator} lightColor=" #eee" darkColor="rgba(255,255,255,0.1)" />
-      <ResourceDisplay path="app/resource_categories/breathing_techniques.tsx" />
+      
 
       <View style={styles.helpContainer}>
         <ExternalLink
